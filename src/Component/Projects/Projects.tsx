@@ -42,6 +42,7 @@ export default function Projects() {
   };
   return (
     <>
+
       <div className="flex inset-0 bg-gradient-to-br from-blue-950 via-purple-900 to-gray-900 min-h-screen w-full pb-10 ">
         <div className="absolute inset-0">
           <div className="absolute top-10 left-4 sm:left-10 w-12 h-12 sm:w-20 sm:h-20 bg-blue-500 rounded-full opacity-20 animate-bounce"></div>

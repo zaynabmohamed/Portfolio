@@ -1,11 +1,11 @@
-import { Link } from "react-router";
+import { Link} from "react-router";
 import "./Navbar.Module.css"
 export default function NavbarPage() {
   return ( 
 <>
 <div className="nav">
   <div className="container bg-gradient-to-br  via-purple-800 to-black">
-    <div className="btn"><Link to="/">Home</Link></div>
+    <div className="btn" ><Link to="/">Home</Link></div>
     <div className="btn"><Link to="/Skills">Skills</Link></div>
     <div className="btn"><Link to="/Projects">Projects</Link></div>
     <div className="btn"><Link to="/Contact">Contact</Link></div>

@@ -3,38 +3,36 @@ import { FaGithub, FaLinkedin , FaWhatsapp} from "react-icons/fa";
 import CV from "../../assets/CV.Zaynab (Frontend).pdf";
 import "./Home.Module.css";
 import { useEffect } from "react";
+import { Boxes } from "../../components/ui/background-boxes";
+import { cn } from "../../lib/utils";
+
 export default function Home () {
    useEffect(()=>{
       document.title= "Zaynab Mohamed — Frontend Developer"
     },[])
   return (
-    <div className="Home relative min-h-screen ">
-       {/* {Design Page Home} */}
-      {/* <div className="grid-container">
-        <div className="plane">
-          <div className="grid"></div>
-          <div className="glow"></div>
-        </div>
-        <div className="plane">
-          <div className="grid"></div>
-          <div className="glow"></div>
-        </div>
-      </div> */}
-      <div className="relative z-10 flex flex-col md:flex-row justify-center items-center p-4 min-h-screen">
-        <img
-          className="w-40 h-40 md:w-60 md:h-60 rounded-full mb-4 md:mb-0 md:mr-8 "
+    <>
+    <div className="Home relative min-h-screen">
+     <div className="h-screen relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center rounded-lg">
+      <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+      <Boxes/>
+      <div className="flex flex-col justify-center items-center md:flex-row md:justify-around">
+          <div>
+              <img
+          className="w-40 h-40 md:w-60 md:h-60 rounded-full mb-4 md:mb-0 md:mr-8 relative z-20"
           alt="image profile"
           src={imgprofile}
         />
-        <div className="text-center md:text-left">
-          <h1 className="cursor-pointer text-2xl md:text-4xl lg:text-6xl text-white mb-2  sm:text-xl">
-            Hi,Zaynab Mohamed
-          </h1>
-          <h2 className="text-gray-400 text-xl md:text-3xl mb-4 text-center">
-            Frontend Developer
-          </h2>
-          {/* { Icon Contact Me} */}
-          <div className="flex justify-center md:justify-center gap-6 relative top-6">
+        </div>
+        <div className="flex flex-col">
+      <h1 className={cn("md:text-4xl text-xl text-white relative z-20 text-center")}>
+         Hi,Zaynab Mohamed
+      </h1>
+      <h2 className="text-gray-200 text-center text-3xl pt-4">Frontend Developer</h2>
+      </div>
+          </div>
+      <p className="text-center mt-2 text-neutral-300 relative z-20 flex ">
+           <div className="flex justify-center md:justify-center gap-6 relative top-6">
             <a
               href="https://www.linkedin.com/in/zaynab-mohamed-09458933a"
                             target="_blank"
@@ -70,8 +68,9 @@ export default function Home () {
               </a>
             </div>
           </div>
-        </div>
-      </div>
+      </p>
     </div>
+    </div>
+    </>
   );
 }

@@ -10,6 +10,8 @@ import Context from "../../assets/context-icon-vector-image-can-be-used-journali
 import Redux from "../../assets/download.Redux.png"
 import TypeScript from "../../assets/download.png"
 import Next from "../../assets/imagesnext.png"
+import Projects from '../Projects/Projects';
+import Contact from '../Contact/Contact';
 const tools = [
   {
     imgSrc: HTMl,
@@ -148,6 +150,8 @@ export default function Skills() {
   </div>
     </div>
     </div>
+    <Projects/>
+    <Contact/>
     </>
   );
 }
