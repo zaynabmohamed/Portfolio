@@ -10,7 +10,7 @@ export default function Home () {
   return (
     <div className="Home relative min-h-screen ">
        {/* {Design Page Home} */}
-      <div className="grid-container">
+      {/* <div className="grid-container">
         <div className="plane">
           <div className="grid"></div>
           <div className="glow"></div>
@@ -19,7 +19,7 @@ export default function Home () {
           <div className="grid"></div>
           <div className="glow"></div>
         </div>
-      </div>
+      </div> */}
       <div className="relative z-10 flex flex-col md:flex-row justify-center items-center p-4 min-h-screen">
         <img
           className="w-40 h-40 md:w-60 md:h-60 rounded-full mb-4 md:mb-0 md:mr-8 "
