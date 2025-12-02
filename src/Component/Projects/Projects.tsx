@@ -3,6 +3,7 @@ import Notes from "../../assets/Screenshot 2025-10-28 141513.png"
 import Social from "../../assets/Screenshot 2025-10-28 170458.png"
 import Dansial from "../../assets/Screenshot 2025-10-11 023502.png"
 import Ecommerce from "../../assets/Screenshot 2025-10-11 025041.png"
+import RealEstate from "../../assets/Screenshot 2025-12-03 002533.png"
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -43,7 +44,7 @@ export default function Projects() {
   return (
     <>
 
-      <div className="flex inset-0 bg-gradient-to-br from-blue-950 via-purple-900 to-gray-900 min-h-screen w-full pb-10 ">
+      <div className="flex inset-0 bg-linear-to-br from-blue-950 via-purple-900 to-gray-900 min-h-screen w-full pb-10 ">
         <div className="absolute inset-0">
           <div className="absolute top-10 left-4 sm:left-10 w-12 h-12 sm:w-20 sm:h-20 bg-blue-500 rounded-full opacity-20 animate-bounce"></div>
           <div className="absolute top-16 sm:top-20 right-4 sm:right-20 w-10 h-10 sm:w-16 sm:h-16 bg-purple-500 rounded-full opacity-30 animate-ping"></div>
@@ -207,5 +208,13 @@ export default function Projects() {
       src: Social,
       GitHub: "https://github.com/zaynabmohamed/Social.App.git",
       LiveDemo: "https://social-app-1779.vercel.app",
+    },
+    {
+      Desc: "using React, Tailwind CSS, and Hero UI, allowing users to create profiles, share posts, like, and comment.Integrated Axios and React Query for efficient API data fetching and synchronization,while React Hook Form was used for smooth and validated user input handling",
+      name: "Real-Estate",
+      designation: "{Frontend=> Next.js and Tailwind , Backend=> Convex and Database  , Authentication=> clerk}",
+      src: RealEstate,
+      GitHub: "https://github.com/zaynabmohamed/Real_Estate.git",
+      LiveDemo: "https://real-estate-bspv.vercel.app",
     },
   ];

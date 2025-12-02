@@ -78,9 +78,9 @@ export default function Skills() {
   const zIndex = [40, 30, 20, 10];
   return (
     <>
-    <div className='bg-gradient-to-br from-blue-950 via-purple-900 to-black h-auto'>
+    <div className='bg-linear-to-br from-blue-950 via-purple-900 to-black h-auto'>
       <div className='flex   md:flex-col lg:flex-row  flex-col lg:justify-around items-center w-[80%] mx-auto'>
-      <div className='flex md:flex-row xl:flex-col flex-col min-h-screen relative right-20 lg:left-40 lg:pb-20 md:grid-cols-2 md:flex-row xl:left-10 lg:pr-44 lg:pt-30 lg:pl-10 md:py-4 md:h-auto'>
+      <div className='flex md:flex-row xl:flex-col flex-col min-h-screen relative right-20 lg:left-38 lg:pb-20 md:grid-cols-2 xl:left-10 lg:pr-44 lg:pt-30 lg:pl-10 md:py-4 md:h-auto'>
   {/* { First Motion Skills } */}
      <div
       className="items-center justify-center flex-1 ml-40 relative md:top-15 md:right-40 
