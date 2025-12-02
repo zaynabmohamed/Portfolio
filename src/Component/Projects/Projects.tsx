@@ -210,7 +210,8 @@ export default function Projects() {
       LiveDemo: "https://social-app-1779.vercel.app",
     },
     {
-      Desc: "built with Next.js and Tailwind CSS, allowing users to explore properties, view detailed and filter homes based on their needs",
+      Desc: "built with Next.js ,Tailwind CSS and TypeScript , allowing users to explore properties, view detailed and filter homes based on their needs",
+      name:"Real-Estate",
       designation: "Frontend=> Next.js and Tailwind , Backend=> Convex and Database  , Authentication=> clerk",
       src: RealEstate,
       GitHub: "https://github.com/zaynabmohamed/Real_Estate.git",
