@@ -1,4 +1,4 @@
-import imgprofile from "../../assets/WhatsApp Image 2025-10-26 at 19.25.55_08a59068.jpg";
+import imgprofile from "../../assets/ZaynabMohamed-CV.pdf";
 import { FaGithub, FaLinkedin , FaWhatsapp} from "react-icons/fa";
 import CV from "../../assets/CV.Zaynab (Frontend).pdf";
 import "./Home.Module.css";
