@@ -207,7 +207,7 @@ export default function Projects() {
       designation: "React,Hero Ui,Tailwindcss,ReactQuery, React-hook-form,axios ",
       src: Social,
       GitHub: "https://github.com/zaynabmohamed/Social.App.git",
-      LiveDemo: "social-app-gamma-beryl.vercel.app/",
+      LiveDemo: "https://social-app-gamma-beryl.vercel.app",
     },
     {
       Desc: "built with Next.js ,Tailwind CSS and TypeScript , allowing users to explore properties, view detailed and filter homes based on their needs",
