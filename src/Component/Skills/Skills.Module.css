@@ -1,0 +1,82 @@
+.orbit-wrap {
+  position: relative;
+  width: clamp(260px, 80vw, 420px); /* صغّرنا الموبايل */
+  aspect-ratio: 1 / 1;
+  border-radius: 9999px;
+  margin: 0 auto; /* يمنع الخروج يمين/شمال */
+  animation: orbit-spin var(--orbit-duration, 22s) linear infinite;
+}
+
+.orbit-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: radial-gradient(circle at 50% 50%, rgba(88, 186, 255, 0.07), rgba(255, 255, 255, 0.02) 45%, transparent 70%);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3), inset 0 0 20px rgba(103, 201, 255, 0.08);
+}
+
+/* 🔥 أهم تعديل: radius ديناميك */
+.orbit-item {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: rotate(var(--angle)) translateX(var(--radius, 110px));
+  transform-origin: 0 0;
+  animation: orbit-counter var(--orbit-duration, 22s) linear infinite;
+}
+
+.orbit-icon {
+  display: grid;
+  place-items: center;
+  width: clamp(44px, 12vw, 64px); /* responsive */
+  height: clamp(44px, 12vw, 64px);
+  border-radius: 9999px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 0 12px rgba(84, 192, 255, 0.16);
+  backdrop-filter: blur(6px);
+  transition: transform 180ms ease;
+}
+
+.orbit-icon:hover {
+  transform: scale(1.08);
+}
+
+.orbit-core {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: clamp(60px, 18vw, 100px);
+  height: clamp(60px, 18vw, 100px);
+  transform: translate(-50%, -50%);
+  border-radius: 9999px;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.35), rgba(114, 187, 255, 0.16) 48%, rgba(12, 24, 33, 0.8) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45), inset 0 0 16px rgba(156, 218, 255, 0.22);
+}
+
+/* 🔥 تحسين النص */
+.orbit-upright span {
+  font-size: clamp(10px, 2.5vw, 13px);
+  text-align: center;
+}
+
+/* 🔥 Animations */
+@keyframes orbit-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbit-counter {
+  from {
+    transform: rotate(var(--angle)) translateX(var(--radius)) rotate(0deg);
+  }
+  to {
+    transform: rotate(var(--angle)) translateX(var(--radius)) rotate(-360deg);
+  }
+}

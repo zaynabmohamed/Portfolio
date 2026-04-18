@@ -1,0 +1,27 @@
+.marquee-container {
+  background-color: #bbf7d0; /* لون الخلفية الأخضر الفاتح */
+  overflow: hidden; /* إخفاء النص الخارج عن الشريط */
+  white-space: nowrap; /* منع النص من النزول لسطر جديد */
+  padding: 15px 0;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: scroll 20s linear infinite; /* تحكمي في السرعة من هنا (مثلاً 10s أسرع) */
+}
+
+.marquee-content span {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #1a2e1a; /* لون الخط الداكن */
+  padding: 0 40px; /* المسافة بين الكلمات */
+}
+
+/* حركة الشريط من اليمين لليسار */
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-90%); }
+}

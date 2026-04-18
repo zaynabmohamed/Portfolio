@@ -41,7 +41,7 @@ const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
   }
 };
   return (
-    <div className="w-full min-h-screen relative bg-gradient-to-tr  via-purple-900 to-blue-900 from-black">
+    <div className="w-full min-h-screen relative bg-[#0C1821] py-20">
       <div className="mx-auto text-black relative pt-30  p-4">
         <h1 className="text-center text-2xl text-blue-600  mb-6">Contact Me</h1>
         <div className="rounded-2xl shadow-2xl sm:w-[40%]  mx-auto p-12 md:w-[60%] lg:w-[40%]">
@@ -57,7 +57,7 @@ const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
             />
             <label
               htmlFor="floating_email"
-              className="  peer-focus:font-medium absolute text-xl text-gray-800  dark:text-gray-400 duration-300 transdm -translate-y-6 scale-75 bottom-12 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-800 peer-focus:dark:text-blue-00 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              className="  peer-focus:font-medium absolute text-xl text-gray-400  dark:text-gray-400 duration-300 transdm -translate-y-6 scale-75 bottom-12 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-800 peer-focus:dark:text-blue-00 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               Email address 
             </label>
@@ -73,7 +73,7 @@ const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
               />
               <label
                 htmlFor="floating_first_name"
-                className="peer-focus:font-medium absolute text-xl text-gray-800 dark:text-gray-400 duration-300 transdm -translate-y-6 scale-75 bottom-12 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-800 peer-focus:dark:text-blue-800 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                className="peer-focus:font-medium absolute text-xl text-gray-400 dark:text-gray-400 duration-300 transdm -translate-y-6 scale-75 bottom-12 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-800 peer-focus:dark:text-blue-800 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 First name
               </label>
@@ -88,7 +88,7 @@ const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
               />
               <label
                 htmlFor="floating_last_name"
-                className="peer-focus:font-medium absolute  text-gray-800 text-xl dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 bottom-12 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-800 peer-focus:dark:text-blue-800 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                className="peer-focus:font-medium absolute  text-gray-400 text-xl dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 bottom-12 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-800 peer-focus:dark:text-blue-800 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 Last name
               </label>
@@ -105,14 +105,14 @@ const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
             />
             <label
               htmlFor="floating_email"
-              className="peer-focus:font-medium absolute text-xl text-gray-800 dark:text-gray-400 duration-300 transdm -translate-y-6 scale-75 bottom-12 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-800 peer-focus:dark:text-blue-800 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              className="peer-focus:font-medium absolute text-xl text-gray-400 dark:text-gray-400 duration-300 transdm -translate-y-6 scale-75 bottom-12 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-800 peer-focus:dark:text-blue-800 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               Subject
             </label>
           </div>
           <button
             type="submit"
-            className="text-white bg-gradient-to-br  via-purple-800 to-black hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="text-white bg-[#383b3a] hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-800 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Submit
           </button>

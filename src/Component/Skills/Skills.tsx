@@ -1,158 +1,105 @@
-import AnimatedCard from '../../components/spectrumui/animatedcard';
-import { easeInOut } from 'framer-motion';
-import { useEffect, useState } from 'react';
- import { motion } from "framer-motion";
-import HTMl from "../../assets/3d-rendered-html-file-icon_84443-57041 , HTML.jpg"
-import Css from "../../assets/css-code-vector-illustration-style_717774-1426. Css.jpg"
-import JavaScript from "../../assets/js.png"
-import React from "../../assets/React.jpeg"
-import Context from "../../assets/context-icon-vector-image-can-be-used-journalism_120816-252196.Context.jpg"
-import Redux from "../../assets/download.Redux.png"
-import TypeScript from "../../assets/download.png"
-import Next from "../../assets/imagesnext.png"
-import Projects from '../Projects/Projects';
-import Contact from '../Contact/Contact';
-const tools = [
-  {
-    imgSrc: HTMl,
-    title: 'HTML',
+import {
+  SiCss3,
+  SiHtml5,
+  SiJavascript,
+  SiNextdotjs,
+  SiReact,
+  SiTypescript,
+} from "react-icons/si";
+import { useEffect, type CSSProperties } from "react";
+import { Share2, GitBranch } from "lucide-react";
+import { motion } from "framer-motion";
+import "./Skills.Module.css";
 
-    aboutProduct: "The standard markup language for structuring web content and building accessible, semantic pages.",
-  },
-  {
-    imgSrc: Css,
-    title: 'Css',
-
-    aboutProduct:
-      "A styling language used to design responsive, visually appealing layouts and animations for the web.",
-  },
-  {
-    imgSrc: JavaScript,
-    title: 'Java Script',
-
-    aboutProduct:"A versatile scripting language for creating interactive, client-side web experiences and logic.",
-  },
-  {
-    imgSrc: React,
-    title: 'React.Js',
-
-    aboutProduct: 'Beautiful, accessible components built using Shadcn UI and Tailwind CSS.',
-  },
-];
-const tool = [
-  {
-    imgSrc: Next,
-    title: 'Next.Js',
-
-    aboutProduct:"A React framework for server-side rendering, static site generation, and building fast, SEO-friendly apps.",
-  },
-  {
-    imgSrc: TypeScript,
-    title: 'TypeScript',
-
-    aboutProduct:
-     "A typed superset of JavaScript that adds static types for more robust, maintainable code.",
-  },
-  {
-    imgSrc: Context ,
-    title: 'Context',
-
-    aboutProduct:"React's built-in state management for passing data through the component tree without prop drilling.",
-  },
-  {
-    imgSrc: Redux,
-    title: 'Redux',
-
-    aboutProduct:"A predictable state container for managing global application state with a unidirectional data flow.",
-  },
-];
 export default function Skills() {
-  useEffect(()=>{
-    document.title= "Skills & Technologies — Zaynab Mohamed"
-  },[])
-  const [touchComponent, setTouchComponent] = useState(false);
-  const rotateDegree = [-20, -10, 5, 17];
-  const xAxis = [-300, -85, 150, 340];
-  const yAxis = [-65, -120, -135, -94];
-  const initialRotation = [0, 6, 12, 17];
-  const zIndex = [40, 30, 20, 10];
+  useEffect(() => {
+    document.title = "Skills & Technologies — Zaynab Mohamed";
+  }, []);
+
+  const skillIcons = [
+    { label: "HTML", Icon: SiHtml5, color: "text-orange-500" },
+    { label: "CSS", Icon: SiCss3, color: "text-blue-500" },
+    { label: "JavaScript", Icon: SiJavascript, color: "text-yellow-400" },
+    { label: "React", Icon: SiReact, color: "text-cyan-400" },
+    { label: "Next.js", Icon: SiNextdotjs, color: "text-white" },
+    { label: "TypeScript", Icon: SiTypescript, color: "text-sky-400" },
+    { label: "Context API", Icon: Share2, color: "text-cyan-300" },
+    { label: "Redux", Icon: GitBranch, color: "text-violet-300" },
+  ];
+
   return (
-    <>
-    <div className='bg-linear-to-br from-blue-950 via-purple-900 to-black h-auto'>
-      <div className='flex   md:flex-col lg:flex-row  flex-col lg:justify-around items-center w-[80%] mx-auto'>
-      <div className='flex md:flex-row xl:flex-col flex-col min-h-screen relative right-20 lg:left-38 lg:pb-20 md:grid-cols-2 xl:left-10 lg:pr-44 lg:pt-30 lg:pl-10 md:py-4 md:h-auto'>
-  {/* { First Motion Skills } */}
-     <div
-      className="items-center justify-center flex-1 ml-40 relative md:top-15 md:right-40 
-     top-40 w-[80%] right-15 mb-6 md:left-10 xl:-top-15 xl:-left-18"
-      onClick={() => setTouchComponent(!touchComponent)}
-    >
-      {tools.map((tool, ind) => (
-        <motion.div
-          key={ind}
-          initial={{ x: 0, y: 0 }}
-          animate={
-            touchComponent
-              ? { x: xAxis[ind], y: yAxis[ind], rotate: rotateDegree[ind] }
-              : { x: 0, y: 0 }
-          }
-          transition={{ ease: easeInOut }}
-          style={{
-            zIndex: zIndex[ind],
-            rotate: initialRotation[ind],
-          }}
-          className="lg:absolute lg:flex justify-center items-center top-40 relative "
-        >
-          <AnimatedCard imgSrc={tool.imgSrc} title={tool.title} aboutProduct={tool.aboutProduct} />
-        </motion.div>
-      ))}
+    <div className="bg-[#0C1821] py-20 relative overflow-hidden ">
+      {/* القوس (Glow Circle) */}
+      <h1 className="mb-10 text-center text-2xl font-bold text-white md:text-3xl">
+        Skills & Tools
+      </h1>
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute top-1/2 right-0 translate-x-1/3 -translate-y-1/2 w-[500px] h-[500px] bg-green-100 rounded-full opacity-20 blur-3xl"
+      />
+      {/* Layout */}
+      <div className="mt-24 grid lg:grid-cols-2 grid-cols-1 gap-12 items-center w-[90%] mx-auto relative m-6">
+        {/* 🔹 Orbit Section */}
+        <div className="flex justify-center items-center">
+          <div
+            className="orbit-wrap"
+            style={
+              {
+                "--orbit-duration": "28s",
+                "--radius": "clamp(120px, 27vw, 170px)",
+              } as CSSProperties
+            }
+          >
+            <div className="orbit-rotator">
+              <div className="orbit-ring" />
+
+              {skillIcons.map(({ label, Icon, color }, i) => {
+                const n = skillIcons.length;
+                const angle = (360 / n) * i - 90;
+                return (
+                  <div
+                    key={label}
+                    className="orbit-item"
+                    style={
+                      {
+                        "--angle": `${angle}deg`,
+                      } as CSSProperties
+                    }
+                  >
+                    <div className="orbit-upright flex flex-col items-center gap-2">
+                      <div className="orbit-icon">
+                        <Icon className={`h-8 w-8 ${color}`} />
+                      </div>
+
+                      <span className="text-xs text-white/80">{label}</span>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+            <div className="orbit-core" />
+          </div>
+        </div>
+        <div className="flex justify-center items-center relative mt-12">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="relative bg-white/10 backdrop-blur-md rounded-xl p-6 md:p-8 shadow-lg max-w-md text-center"
+          >
+            <h3 className="text-xl md:text-2xl font-bold text-white mb-4 ">
+              About My Frontend Journey
+            </h3>
+
+            <p className="text-gray-300 text-sm md:text-base leading-relaxed ">
+             Frontend Developer skilled in React, Next.js, and TypeScript. Experienced in scalable
+web apps with clean architecture, state management, and REST API integration.
+Strong focus on performance optimization, SEO, and production-ready delivery.
+Seeking challenging roles in modern React/Next.js development
+            </p>
+          </motion.div>
+        </div>
+      </div>
     </div>
-      {/* { Second Motion Skills } */}
-    <div
-      className="items-center justify-center flex-1 ml-40 relative 
-     w-[80%] right-15 flex flex-col top-20 pt-52 lg:mt-40 md:mr-30 md:left-10 xl:-top-8 xl:-left-12"
-      onClick={() => setTouchComponent(!touchComponent)}
-    >
-      {tool.map((tool, ind) => (
-        <motion.div
-          key={ind}
-          initial={{ x: 0, y: 0 }}
-          animate={
-            touchComponent
-              ? { x: xAxis[ind], y: yAxis[ind], rotate: rotateDegree[ind] }
-              : { x: 0, y: 0 }
-          }
-          transition={{ ease: easeInOut }}
-          style={{
-            zIndex: zIndex[ind],
-            rotate: initialRotation[ind],
-          }}
-          className="lg:absolute lg:flex justify-center relative items-center"
-        >
-          <AnimatedCard imgSrc={tool.imgSrc} title={tool.title} aboutProduct={tool.aboutProduct} />
-        </motion.div>
-      ))}
-    </div>
- </div>
-   {/* { about My Skills } */}
-  <div className='relative lg:left-40 md:left-15 order-1 justify-center lg:pl-30 items-center pt-44 md:w-[80%] lg:w-[60%] md:pb-20 md:pr-20 '>
-      <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="bg-white/10 backdrop-blur-md rounded-lg p-8 shadow-lg mx-auto "
-        >
-          <h3 className="text-2xl font-bold text-white mb-4 text-center">About My Frontend Journey</h3>
-          <p className="text-gray-300 leading-relaxed text-center">
-            With a strong foundation in HTML, CSS, and JavaScript, I leverage modern frameworks like React and Next.js to build scalable and performant solutions. My expertise extends to TypeScript for type-safe development, Context API and Redux for efficient state management, ensuring robust and maintainable code. I am passionate about responsive design, accessibility, and staying up-to-date with the latest frontend technologies to deliver innovative solutions.
-          </p>
-        </motion.div>
-  </div>
-    </div>
-    </div>
-    <Projects/>
-    <Contact/>
-    </>
   );
 }
-

@@ -1,13 +1,30 @@
-import { Outlet } from "react-router";
 import NavbarPage from "../Navbar/NavbarPage";
+import Home from "../Home/Home";
+import Skills from "../Skills/Skills";
+import Projects from "../Projects/Projects";
+import Contact from "../Contact/Contact";
 
 export default function Layout() {
   return (
-    <div>
-      <div className="absolute top-5 left-0 flex justify-center w-full z-50">
+    <div className="w-full">
+      <div className=" flex justify-center w-full ">
         <NavbarPage />
       </div>
-        <Outlet/>
+
+      <main>
+        <section id="home" className="scroll-mt-24">
+          <Home />
+        </section>
+        <section id="skills" className="scroll-mt-24">
+          <Skills />
+        </section>
+        <section id="projects" className="scroll-mt-24">
+          <Projects />
+        </section>
+        <section id="contact" className="scroll-mt-24">
+          <Contact />
+        </section>
+      </main>
     </div>
   );
 }

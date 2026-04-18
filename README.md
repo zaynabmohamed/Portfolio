@@ -1,73 +1,57 @@
-# React + TypeScript + Vite
+# 🌿 Zaynab Mohamed | Frontend Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, modern, and high-performance portfolio built with **React** and **Tailwind CSS**. This project features a professional **Glassmorphism** UI, custom animations, and a focus on clean code.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+[View Live Portfolio](https://portfolio-eight-psi-5lmmpng04m.vercel.app) <!-- Replace with your actual link -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🎨 Visual Identity
+- **Design Style:** Glassmorphism (Frosted glass effect).
+- **Primary Palette:** Emerald Green, Deep Charcoal, and White/Opacity.
+- **Key Features:** 
+  - Custom SVG/CSS Loaders.
+  - Interactive Skill Marquee.
+  - Fully Responsive Design (Mobile First).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
+- **Framework:** React.js
+- **Styling:** Tailwind CSS & CSS Modules.
+- **Icons:** React Icons (FaLinkedin, FaGithub, FaWhatsapp).
+- **Animations:** CSS Keyframes & Framer Motion (if used).
 
-## Expanding the ESLint configuration
+## 🧩 Key Components
+- **Home Section:** Features a glass-card layout with optimized background rendering.
+- **Skill Marquee:** A dynamic scrolling bar showcasing:
+  - **Technical:** React, Next.js, JavaScript (ES6+), Tailwind CSS, Git.
+  - **Soft Skills:** Problem Solving, Team Collaboration, Agile Development.
+- **Custom Loader:** A branded green-themed loading animation for seamless transitions.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Technologies Used
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Frontend:** React, Next.js, Tailwind CSS, TypeScript  
+- **Backend:** Appwrite (Authentication, Database, Real-time updates)  
+- **Deployment:** Vercel  
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+To run the project locally, clone the repository and install dependencies:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+```bash
+git clone https://github.com/zaynabmohamed/Portfolio.git
+cd Portfolio
+npm install
+# or
+yarn install
+# or
+pnpm install
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📁 Project Structure
+```bash
+src/
+├── assets/      # Optimized images and PDF (CV)
+├── components/  # Reusable UI parts (Marquee, Loader, Button)
+├── pages/       # Page layouts (Home)
+└── styles/      # Global styling and tailwind configurations
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```

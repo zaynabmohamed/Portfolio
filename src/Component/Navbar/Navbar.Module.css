@@ -1,62 +1,24 @@
-.outline {
- border-radius: 20px;
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
+
+ .navbarWrapper {
+  position: fixed;
+  top: 10px;
+  left: 51%;
+  transform: translateX(-50%);
+  z-index: 9999;
 }
-.rect {
-  stroke-dashoffset: 5;
-  stroke-dasharray: 0 0 10 10 10 10;
-  transition: 0.5s;
-  stroke: #070749;
-}
-.nav {
-  position: relative;
-  width: 400px;
-  height: 60px;
-}
-.container:hover .outline .rect {
-  transition: 999999s;
-  stroke-dashoffset: 1;
-  stroke-dasharray: 0;
-}
-.container {
-  border-radius: 20px;
-  position: absolute;
-  inset: 0;
+
+.navbarNav {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   align-items: center;
-  padding: 0.5em;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 999px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(10, 14, 18, 0.35);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
-.btn {
-  padding: 0.5em 1.5em;
-  color: #fff;
-  cursor: pointer;
-  transition: 0.1s;
-}
-.btn:hover {
-  background: #fff3;
-}
-.btn:nth-child(1):hover ~ svg .rect {
-  stroke-dashoffset: 0;
-  stroke-dasharray: 0 2 8 73.3 8 10.7;
-}
-.btn:nth-child(2):hover ~ svg .rect {
-  stroke-dashoffset: 0;
-  stroke-dasharray: 0 12.6 9.5 49.3 9.5 31.6;
-}
-.btn:nth-child(3):hover ~ svg .rect {
-  stroke-dashoffset: 0;
-  stroke-dasharray: 0 24.5 8.5 27.5 8.5 55.5;
-}
-.btn:nth-child(4):hover ~ svg .rect {
-  stroke-dashoffset: 0;
-  stroke-dasharray: 0 34.7 6.9 10.2 6.9 76;
-}
-.btn:hover ~ .outline .rect {
-  stroke-dashoffset: 0;
-  stroke-dasharray: 0 0 10 40 10 40;
-  transition: 0.5s !important;
-}
+
+
