@@ -28,7 +28,7 @@ export default function Work({ projects }) {
         <div className="flex flex-col items-center">
 
           <div
-            className=" mx-auto sm:w-[460px] sm:h-[420px] md:w-[360px] md:h-[560px] w-[330px] h-[500px] bg-black rounded-[40px] p-3 shadow-2xl relative transition duration-300 hover:scale-105"
+            className=" mx-auto sm:w-[200px] sm:h-[200px] md:w-[560px] md:h-[560px] w-[280px] h-[600px] bg-black rounded-[40px] p-3 shadow-2xl relative transition duration-300 hover:scale-105"
             onMouseEnter={() => setIsHover(true)}
             onMouseLeave={() => setIsHover(false)}
           >

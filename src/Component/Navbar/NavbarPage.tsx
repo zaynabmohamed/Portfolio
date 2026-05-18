@@ -11,7 +11,7 @@ import { LaptopMinimalCheck } from 'lucide-react';
   import { FileText, Github, Linkedin } from "lucide-react";
 import { MessageCircleCode } from 'lucide-react'
 import { MailPlus } from 'lucide-react';
-import CV from "../../assets/ZaynabMohamed-CV-Frontend.pdf";
+import CV from "../../assets/Zaynab-CV-Frontend.pdf";
 
 export default function NavbarPage() {
   return (
@@ -67,7 +67,7 @@ export default function NavbarPage() {
   </DropdownMenuItem>
   <DropdownMenuItem asChild>
     <a
-      href="https://www.linkedin.com/in/your-profile"
+      href="https://www.linkedin.com/in/zaynab-mohamed-09458933a"
       target="_blank"
       className="flex items-center"
     >
