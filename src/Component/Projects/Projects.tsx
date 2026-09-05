@@ -2,8 +2,9 @@ import Notes from "../../assets/Screenshot 2025-10-28 141513.png"
 import Social from "../../assets/Screenshot 2025-10-28 170458.png"
 import Dansial from "../../assets/Screenshot 2025-10-11 023502.png"
 import Ecommerce from "../../assets/Screenshot 2025-10-11 025041.png"
-import RealEstate from "../../assets/Screenshot 2025-12-03 002533.png"
+import AccountingApp from "../../assets/Screenshot 2026-09-05 045544.png"
 import CareHub from "../../assets/Screenshot 2026-04-18 001734.png"
+import MedicalWebsite from "../../assets/Screenshot 2026-09-05 045800.png"
 import Work from "../Work/Work";
 import Carousel from "../Carousel/Carousel"
 const projects = [
@@ -47,14 +48,39 @@ const projects = [
       GitHub: "https://github.com/zaynabmohamed/Social.App.git",
       LiveDemo: "https://social-app-gamma-beryl.vercel.app",
     },
-    {
-      Desc: "built with Next.js ,Tailwind CSS and TypeScript , allowing users to explore properties, view detailed and filter homes based on their needs",
-      name:"Real-Estate",
-      designation: "Frontend=> Next.js and Tailwind , Backend=> Convex and Database  , Authentication=> clerk",
-      src: RealEstate,
-      GitHub: "https://github.com/zaynabmohamed/Real_Estate.git",
-      LiveDemo: "https://real-estate-bspv.vercel.app",
-    },
+   {
+Desc: "Full-stack accounting management system for managing clients, invoices, payments, transactions, and visits, with role-based access control and a responsive dashboard.",
+name: "Accounting App",
+designation: "Frontend => Next.js, TypeScript and Tailwind CSS | Backend & Database => Firebase, Firestore | Authentication & Authorization => Firebase Auth + Role-Based Access Control | State Management => React Query",
+src: AccountingApp,
+GitHub: "https://github.com/zaynabmohamed/Accounting_App.git",
+LiveDemo: "https://accounting-app-umber-tau.vercel.app",
+},
+   {
+Desc: "Full-stack accounting management system for managing clients, invoices, payments, transactions, and visits, with role-based access control and a responsive dashboard.",
+name: "Accounting App",
+designation: "Frontend => Next.js, TypeScript and Tailwind CSS | Backend & Database => Firebase, Firestore | Authentication & Authorization => Firebase Auth + Role-Based Access Control | State Management => React Query",
+src: AccountingApp,
+GitHub: "https://github.com/zaynabmohamed/Accounting_App.git",
+LiveDemo: "https://accounting-app-umber-tau.vercel.app",
+},
+{
+  Desc: "Full-stack medical clinic management system for managing doctors, patients, appointments, and clinic services, with a responsive interface and streamlined online booking experience.",
+  name: "Medical Website",
+  designation: "Frontend => Next.js, TypeScript and Tailwind CSS | Backend & Database => Firebase, Firestore | Authentication & Authorization => Firebase Auth | Booking System => Doctor Appointments & Scheduling | UI/UX => Responsive Design",
+  src: MedicalWebsite,
+  GitHub: "https://github.com/zaynabmohamed/Medical-website.git",
+  LiveDemo: "https://medical-website-silk-psi.vercel.app/",
+},
+   {
+Desc: "Full-stack accounting management system for managing clients, invoices, payments, transactions, and visits, with role-based access control and a responsive dashboard.",
+name: "Accounting App",
+designation: "Frontend => Next.js, TypeScript and Tailwind CSS | Backend & Database => Firebase, Firestore | Authentication & Authorization => Firebase Auth + Role-Based Access Control | State Management => React Query",
+src: AccountingApp,
+GitHub: "https://github.com/zaynabmohamed/Accounting_App.git",
+LiveDemo: "https://accounting-app-umber-tau.vercel.app",
+},
+
 ];
 export default function Projects() {
   return (
